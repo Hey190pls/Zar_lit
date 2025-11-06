@@ -1,1 +1,150 @@
+<!doctype html>
+<html lang="uk">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Несподівані факти про Шиллера</title>
+    <style>
+        :root{
+          --bg:#071022;
+          --card:#07172a;
+          --accent:#8be1ff;
+          --glow:#6be7ff;
+          --muted:#9fb7c8;
+          --glass: rgba(255,255,255,0.04);
+        }
+
+        body{
+          margin:0;
+          background:linear-gradient(180deg,var(--bg),#04101a 80%);
+          color:#e9f7ff;
+          font-family:'Inter',system-ui,-apple-system,'Segoe UI',Roboto,'Helvetica Neue',Arial;
+        }
+
+        .schiller-section{padding:4rem 1rem;}
+        .container{max-width:1100px;margin:0 auto;}
+
+        .sf-header{text-align:center;margin-bottom:2rem}
+        .sf-header h2{
+          font-size:2rem;
+          background:linear-gradient(90deg,var(--accent),#c9f6ff);
+          -webkit-background-clip:text;
+          color:transparent;
+        }
+        .subtitle{color:var(--muted);}
+
+        .facts-grid{
+          display:grid;
+          grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+          gap:1.25rem;
+        }
+
+        .fact-card{
+          background:linear-gradient(180deg, rgba(255,255,255,0.02), var(--glass));
+          border:1px solid rgba(107,231,255,0.06);
+          padding:1.25rem;
+          border-radius:14px;
+          backdrop-filter: blur(6px);
+          position:relative;
+          overflow:hidden;
+          opacity:0;
+          transform:translateY(14px);
+          transition:transform .35s, box-shadow .35s, opacity .6s;
+        }
+        .fact-card.visible{opacity:1;transform:none;}
+
+        .fact-eyebrow{color:var(--accent);font-size:0.85rem;margin-bottom:0.5rem;}
+        .fact-card h3{margin-top:0;font-size:1.1rem;}
+        .fact-text{color:var(--muted);margin-bottom:0;}
+
+        .fact-card:hover{
+          transform: translateY(-8px);
+          box-shadow:0 10px 30px rgba(3,10,20,0.6);
+        }
+        .fact-card::before{
+          content:'';
+          position:absolute;
+          inset:-50%;
+          background:radial-gradient(circle at var(--x,50%) var(--y,50%), rgba(139,225,255,0.06), transparent 10%);
+          pointer-events:none;
+        }
+
+        .sf-footer{
+          display:grid;
+          grid-template-columns:1fr 1fr;
+          gap:1rem;
+          margin-top:2rem;
+        }
+        .sf-footer > div{
+          padding:1rem;
+          border-radius:12px;
+          background:linear-gradient(180deg, rgba(11,18,30,0.45), rgba(6,12,20,0.35));
+          border:1px solid rgba(255,255,255,0.03);
+        }
+        .sf-footer h3{margin-top:0;}
+
+        @media(max-width:720px){
+          .sf-footer{grid-template-columns:1fr;}
+          .sf-header h2{font-size:1.6rem;}
+        }
+    </style>
+</head>
+<body>
+
+<section id="schiller-facts" class="schiller-section">
+  <div class="container">
+    <header class="sf-header">
+      <h2>🌟 Несподівані й захопливі факти про Фрідріха Шиллера</h2>
+      <p class="subtitle">Дивні звички, дружба з Гете та моторошні загадки</p>
+    </header>
+
+    <div class="facts-grid">
+      <article class="fact-card"><div class="fact-eyebrow">1 • Ритуал натхнення</div><h3>Писав лише при запаху гнилих яблук</h3><p class="fact-text">Тримав у шухляді столу зогнилі яблука. Гете жартував, що від нього «пахне натхненням».</p></article>
+      <article class="fact-card"><div class="fact-eyebrow">2 • Медик</div><h3>Шиллер був військовим лікарем</h3><p class="fact-text">Навчався у військовій академії, працював полковим лікарем та таємно писав «Розбійників».</p></article>
+      <article class="fact-card"><div class="fact-eyebrow">3 • Цензура</div><h3>Його першу п'єсу заборонили</h3><p class="fact-text">За «Розбійників» Шиллера посадили під арешт і заборонили писати.</p></article>
+      <article class="fact-card"><div class="fact-eyebrow">4 • Дует геніїв</div><h3>Шиллер і Гете — літературна команда</h3><p class="fact-text">Щодня листувалися та змагалися — хто напише краще.</p></article>
+      <article class="fact-card"><div class="fact-eyebrow">5 • Король ночі</div><h3>Працював лише вночі</h3><p class="fact-text">Щоб не заснути — ставив ноги в холодну воду або загортався у мокрий рушник.</p></article>
+      <article class="fact-card"><div class="fact-eyebrow">6 • Шекспіроманія</div><h3>Обожнював Шекспіра</h3><p class="fact-text">Переклав його німецькою і казав: «Хто не читав Шекспіра — той не знає людини».</p></article>
+    </div>
+
+    <footer class="sf-footer">
+      <div>
+        <h3>⚔️ Філософія свободи</h3>
+        <p>Шиллер вірив, що свобода починається з душі. У «Оді до радості» він мріяв про братерство всіх людей.</p>
+      </div>
+      <div>
+        <h3>😱 Моторошний факт</h3>
+        <p>Після смерті його череп зник. Декілька черепів вважалися “справжніми”. До сьогодні немає 100% підтвердження.</p>
+      </div>
+    </footer>
+  </div>
+</section>
+
+<script>
+  // Анімація появи
+  const cards = document.querySelectorAll('.fact-card');
+  function revealOnScroll(){
+    const trigger = window.innerHeight * 0.85;
+    cards.forEach(card=>{
+      const rect = card.getBoundingClientRect();
+      if(rect.top < trigger) card.classList.add('visible');
+    });
+  }
+  revealOnScroll();
+  window.addEventListener('scroll', revealOnScroll);
+
+  // Ефект світіння
+  cards.forEach(card=>{
+    card.addEventListener('mousemove', e=>{
+      const r = card.getBoundingClientRect();
+      const x = ((e.clientX - r.left)/r.width)*100 + '%';
+      const y = ((e.clientY - r.top)/r.height)*100 + '%';
+      card.style.setProperty('--x', x);
+      card.style.setProperty('--y', y);
+    });
+  });
+</script>
+
+</body>
+</html>
 
