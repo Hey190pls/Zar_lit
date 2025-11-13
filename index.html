@@ -2,345 +2,322 @@
 <html lang="uk">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Фрідріх Шиллер — Біографія, Твори, Гра</title>
-    <style>
-        :root {
-            --bg: #071022;
-            --panel: #0b1220;
-            --accent: #8bd3ff;
-            --muted: #94a3b8;
-            --glass: rgba(255, 255, 255, 0.03);
-        }
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Фрідріх Шиллер — Біографія, Факти, Твори, Гра</title>
+  <style>
+    :root {
+      --bg: #071022;
+      --panel: #0b1220;
+      --accent: #8bd3ff;
+      --muted: #94a3b8;
+      --glass: rgba(255, 255, 255, 0.03);
+    }
 
-        * {
-            box-sizing: border-box
-        }
+    * {
+      box-sizing: border-box
+    }
 
-        body {
-            margin: 0;
-            font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
-            color: #eaf6ff;
-            background:
-                linear-gradient(180deg, var(--bg), #061018);
-            -webkit-font-smoothing: antialiased
-        }
+    body {
+      margin: 0;
+      font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, Arial;
+      color: #eaf6ff;
+      background: linear-gradient(180deg, var(--bg), #061018);
+      -webkit-font-smoothing: antialiased
+    }
 
-        .wrap {
-            max-width: 1000px;
-            margin: 0 auto;
-            padding: 22px
-        }
+    .wrap {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 22px
+    }
 
-        header {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 12px;
-            padding: 10px 0;
-            position: sticky;
-            top: 0;
-            background: linear-gradient(180deg, rgba(8, 12, 20, 0.6), rgba(8, 12, 20, 0.35));
-            backdrop-filter: blur(6px);
-            border-bottom: 1px solid rgba(255, 255, 255, 0.02);
-            z-index: 10
-        }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 12px;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      background: linear-gradient(180deg, rgba(8, 12, 20, 0.6), rgba(8, 12, 20, 0.35));
+      backdrop-filter: blur(6px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.02);
+      z-index: 10
+    }
 
-        .logo {
-            font-weight: 700;
-            font-size: 1.3rem;
-            color: var(--accent);
-            margin: 0
-        }
+    .logo {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: var(--accent);
+      margin: 0
+    }
 
-        nav {
-            display: flex;
-            gap: 8px
-        }
+    nav {
+      display: flex;
+      gap: 8px
+    }
 
-        nav button {
-            background: transparent;
-            border: none;
-            color: var(--muted);
-            padding: 8px 12px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: 600
-        }
+    nav button {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600
+    }
 
-        nav button.active,
-        nav button:hover {
-            color: var(--accent);
-            background: rgba(139, 211, 255, 0.04)
-        }
+    nav button.active,
+    nav button:hover {
+      color: var(--accent);
+      background: rgba(139, 211, 255, 0.04)
+    }
 
-        main {
-            margin-top: 18px
-        }
+    main {
+      margin-top: 18px
+    }
 
-        section {
-            display: none;
-            padding: 18px 0
-        }
+    section {
+      display: none;
+      padding: 18px 0
+    }
 
-        section.active {
-            display: block
-        }
+    section.active {
+      display: block
+    }
 
-        .hero {
-            text-align: center;
-            padding: 28px;
-            border-radius: 12px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.007));
-            border: 1px solid var(--glass);
-            animation: floaty 6s ease-in-out infinite
-        }
+    .hero {
+      text-align: center;
+      padding: 28px;
+      border-radius: 12px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.007));
+      border: 1px solid var(--glass);
+      animation: floaty 6s ease-in-out infinite
+    }
 
-        .hero h1 {
-            margin: 0;
-            font-size: 1.8rem
-        }
+    .hero h1 {
+      margin: 0;
+      font-size: 1.8rem
+    }
 
-        .muted {
-            color: var(--muted)
-        }
+    .muted {
+      color: var(--muted)
+    }
 
-        .btn {
-            display: inline-block;
-            background: var(--accent);
-            color: #021028;
-            padding: 10px 16px;
-            border-radius: 10px;
-            text-decoration: none;
-            margin: 10px 6px;
-            font-weight: 700;
-            cursor: pointer
-        }
+    .btn {
+      display: inline-block;
+      background: var(--accent);
+      color: #021028;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      margin: 10px 6px;
+      font-weight: 700;
+      cursor: pointer
+    }
 
-        .facts {
-            background: transparent;
-            border: none;
-            color: var(--muted);
-            padding: 8px 12px;
-            border-radius: 10px;
-            cursor: pointer;
-            font-weight: 600
-        }
+    .facts {
+      background: transparent;
+      border: none;
+      color: var(--muted);
+      padding: 8px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      font-weight: 600;
+      text-decoration: none;
+    }
 
-        .btn.ghost {
-            background: transparent;
-            border: 1px solid rgba(139, 211, 255, 0.12);
-            color: var(--accent)
-        }
+    .btn.ghost {
+      background: transparent;
+      border: 1px solid rgba(139, 211, 255, 0.12);
+      color: var(--accent)
+    }
 
-        .bio-cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 12px;
-            margin-top: 12px
-        }
+    .bio-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 12px;
+      margin-top: 12px
+    }
 
-        .card {
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
-            padding: 14px;
-            border-radius: 12px;
-            border: 1px solid var(--glass)
-        }
+    .card {
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01));
+      padding: 14px;
+      border-radius: 12px;
+      border: 1px solid var(--glass)
+    }
 
-        blockquote {
-            font-style: italic;
-            color: var(--muted);
-            border-left: 3px solid rgba(139, 211, 255, 0.12);
-            padding-left: 12px;
-            margin: 16px 0
-        }
+    blockquote {
+      font-style: italic;
+      color: var(--muted);
+      border-left: 3px solid rgba(139, 211, 255, 0.12);
+      padding-left: 12px;
+      margin: 16px 0
+    }
 
-        .works-list ul {
-            line-height: 1.6;
-            padding-left: 18px
-        }
+    .works-list ul {
+      line-height: 1.6;
+      padding-left: 18px
+    }
 
-        .work {
-            margin-top: 16px;
-            padding: 12px;
-            border-radius: 10px;
-            background: rgba(255, 255, 255, 0.02);
-            border: 1px solid var(--glass)
-        }
+    .work {
+      margin-top: 16px;
+      padding: 12px;
+      border-radius: 10px;
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--glass)
+    }
 
-        pre.poem {
-            white-space: pre-wrap;
-            font-family: Georgia, 'Times New Roman', serif;
-            background: rgba(0, 0, 0, 0.05);
-            padding: 10px;
-            border-radius: 8px
-        }
+    pre.poem {
+      white-space: pre-wrap;
+      font-family: Georgia, 'Times New Roman', serif;
+      background: rgba(0, 0, 0, 0.05);
+      padding: 10px;
+      border-radius: 8px
+    }
 
-        /* game */
-        .game-board {
-            position: relative;
-            height: 340px;
-            background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.015));
-            border-radius: 12px;
-            margin: 18px 0;
-            overflow: hidden;
-            border: 1px solid var(--glass)
-        }
+    /* game */
+    .game-board {
+      position: relative;
+      height: 340px;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.01), rgba(255, 255, 255, 0.015));
+      border-radius: 12px;
+      margin: 18px 0;
+      overflow: hidden;
+      border: 1px solid var(--glass)
+    }
 
-        #glove {
-            position: absolute;
-            font-size: 42px;
-            cursor: pointer;
-            user-select: none;
-            transition: transform 0.15s ease, left .12s ease, top .12s ease
-        }
+    #glove {
+      position: absolute;
+      font-size: 42px;
+      cursor: pointer;
+      user-select: none;
+      transition: transform 0.15s ease, left .12s ease, top .12s ease
+    }
 
-        #glove.pop {
-            transform: scale(1.35) rotate(-8deg)
-        }
+    #glove.pop {
+      transform: scale(1.35) rotate(-8deg)
+    }
 
-        .game-controls {
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            gap: 12px
-        }
+    .game-controls {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 12px
+    }
 
-        .result {
-            margin-top: 12px;
-            color: var(--accent);
-            font-weight: 800
-        }
+    .result {
+      margin-top: 12px;
+      color: var(--accent);
+      font-weight: 800
+    }
 
-        footer {
-            padding: 18px 0;
-            text-align: center;
-            color: var(--muted);
-            font-size: 0.95rem
-        }
+    footer {
+      padding: 18px 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.95rem
+    }
 
-        @media (max-width:600px) {
-            .wrap {
-                padding: 12px
-            }
+    @media (max-width:600px) {
+      .wrap {
+        padding: 12px
+      }
 
-            .hero h1 {
-                font-size: 1.2rem
-            }
-        }
+      .hero h1 {
+        font-size: 1.2rem
+      }
+    }
 
-        @keyframes floaty {
-            0% {
-                transform: translateY(0)
-            }
+    @keyframes floaty {
+      0% {
+        transform: translateY(0)
+      }
 
-            50% {
-                transform: translateY(-6px)
-            }
+      50% {
+        transform: translateY(-6px)
+      }
 
-            100% {
-                transform: translateY(0)
-            }
-        }
+      100% {
+        transform: translateY(0)
+      }
+    }
 
-        /* small decorative glow */
-        .glow {
-            box-shadow: 0 6px 30px rgba(139, 211, 255, 0.06);
-            border-radius: 12px
-        }
+    .glow {
+      box-shadow: 0 6px 30px rgba(139, 211, 255, 0.06);
+      border-radius: 12px
+    }
 
-        /* accessible focus */
-        button:focus {
-            outline: 2px solid rgba(139, 211, 255, 0.12);
-            outline-offset: 2px
-        }
-    </style>
+    button:focus {
+      outline: 2px solid rgba(139, 211, 255, 0.12);
+      outline-offset: 2px
+    }
+  </style>
 </head>
 
 <body>
-    <div class="wrap">
-        <header>
-            <div>
-                <div class="logo">Фрідріх Шиллер</div>
-                <div class="muted" style="font-size:0.85rem">1759 — 1805 · поет, драматург, мислитель</div>
-            </div>
-            <nav aria-label="Головна навігація">
-                <button data-target="bio" class="active">Біографія</button>
-                <button data-target="works">Твори</button>
-                <a class="facts" href="schiller-facts.html">Несподівані факти про Шиллера</a>
-                <button data-target="game">Легка гра</button>
-            </nav>
-        </header>
+  <div class="wrap">
+    <header>
+      <div>
+        <div class="logo">Фрідріх Шиллер</div>
+        <div class="muted" style="font-size:0.85rem">1759 — 1805 · поет, драматург, мислитель</div>
+      </div>
+      <nav aria-label="Головна навігація">
+        <button data-target="bio" class="active">Біографія</button>
+        <button data-target="works">Твори</button>
+        <a class="facts" href="schiller-facts.html">Несподівані факти про Шиллера</a>
+        <button data-target="game">Легка гра</button>
+      </nav>
+    </header>
 
-        <main>
-            <!-- Біографія -->
-            <section id="bio" class="active">
-                <div class="hero glow">
-                    <h1>Німецький поет, драматург і мислитель</h1>
-                    <p class="muted">Фрідріх Шиллер (10 листопада 1759 — 9 травня 1805). Один із провідних німецьких
-                        класиків. Тут — коротка біографія, вибрані твори і невеличка інтерактивність.</p>
-                    <div style="margin-top:12px">
-                        <button class="btn" data-target="works">Переглянути твори</button>
-                        <button class="btn ghost" data-target="game">Пограти</button>
-                    </div>
-                </div>
+    <main>
+      <!-- Біографія -->
+      <section id="bio" class="active">
+        <h2>Коротка біографія</h2>
+        <p class="muted">Шиллер народився в Марбах-на-Неккарі. Навчався на військового лікаря, але присвятив
+          себе літературі. Став відомий драмами, історичними поемами та філософськими есе.</p>
+        <div class="bio-cards">
+          <article class="card">
+            <h3>Ранні роки</h3>
+            <p class="muted">Народився у родині військового лікаря; освіта в медичній школі, ранні
+              літературні спроби супроводжувалися конфліктом із цеховою системою того часу.</p>
+          </article>
+          <article class="card">
+            <h3>Літературний шлях</h3>
+            <p class="muted">Після перших успіхів у драмі Шиллер приєднався до руху класицизму,
+              співпрацював з Гете, займався історичною поетикою та есе.</p>
+          </article>
+          <article class="card">
+            <h3>Вплив</h3>
+            <p class="muted">Величезний вплив на німецьку драматургію й європейську культуру; його
+              тексти досі ставлять на сценах світу.</p>
+          </article>
+        </div>
+        <blockquote>«Поезія — це висока і ясна пристрасть, яка піднімає людину над повсякденною буденністю.»
+        </blockquote>
+      </section>
+      </section>
 
-                <section style="margin-top:18px">
-                    <h2>Коротка біографія</h2>
-                    <p class="muted">Шиллер народився в Марбах-на-Неккарі. Навчався на військового лікаря, але присвятив
-                        себе літературі. Став відомий драмами, історичними поемами та філософськими есе. Його твори —
-                        поєднання емоційної сили й класичної форми. Найвідоміші: <em>Розбійники</em>, <em>Кабала і
-                            кохання</em>, <em>Валленштейн</em>, <em>Вільгельм Телль</em>, вірш <em>До радості</em>.</p>
+      <!-- Твори -->
+      <section id="works">
+        <h2>Його твори —
+        поєднання емоційної сили й класичної форми. Найвідоміші:</h2>
+        <ul>
+          <li><strong>Розбійники</strong> (Die Räuber) — драма про конфлікти честі й свободи.</li>
+          <li><strong>Кабала і кохання</strong> (Kabale und Liebe) — трагічна історія кохання між станами.
+          </li>
+          <li><strong>Валленштейн</strong> — трилогія історичних драм.</li>
+          <li><strong>Вільгельм Телль</strong> — драма про боротьбу за свободу.</li>
+          <li><strong>До радості</strong> (Ода до радості) — вірш, покладений у фінал IX симфонії
+            Бетховена.</li>
+          <li><strong>Рукавичка</strong> — коротка художня мініатюра, додана спеціально для цього сайту.
+          </li>
+        </ul>
 
-                    <div class="bio-cards">
-                        <article class="card">
-                            <h3>Ранні роки</h3>
-                            <p class="muted">Народився у родині військового лікаря; освіта в медичній школі, ранні
-                                літературні спроби супроводжувалися конфліктом із цеховою системою того часу.</p>
-                        </article>
-                        <article class="card">
-                            <h3>Літературний шлях</h3>
-                            <p class="muted">Після перших успіхів у драмі Шиллер приєднався до руху класицизму,
-                                співпрацював з Гете, займався історичною поетикою та есе.</p>
-                        </article>
-                        <article class="card">
-                            <h3>Вплив</h3>
-                            <p class="muted">Величезний вплив на німецьку драматургію й європейську культуру; його
-                                тексти досі ставлять на сценах світу.</p>
-                        </article>
-                    </div>
-                    <blockquote>«Поезія — це висока і ясна пристрасть, яка піднімає людину над повсякденною буденністю.»
-                    </blockquote>
-                </section>
-            </section>
-</div>
-</footer>
-</div>
-</section>
-
-            <!-- Твори -->
-            <section id="works">
-                <h2>Вибрані твори</h2>
-                <div class="works-list">
-                    <ul>
-                        <li><strong>Розбійники</strong> (Die Räuber) — драма про конфлікти честі й свободи.</li>
-                        <li><strong>Кабала і кохання</strong> (Kabale und Liebe) — трагічна історія кохання між станами.
-                        </li>
-                        <li><strong>Валленштейн</strong> — трилогія історичних драм.</li>
-                        <li><strong>Вільгельм Телль</strong> — драма про боротьбу за свободу.</li>
-                        <li><strong>До радості</strong> (Ода до радості) — вірш, покладений у фінал IX симфонії
-                            Бетховена.</li>
-                        <li><strong>Рукавичка</strong> — коротка художня мініатюра, додана спеціально для цього сайту.
-                        </li>
-                    </ul>
-
-                    <article class="work">
-                        <h3>Рукавичка — мініатюра</h3>
-                        <p class="muted">Це уявний короткий твір у стилі класичної поетики — символ втрати та пам'яті.
-                        </p>
-                        <pre class="poem">
-                        Ждучи на грища і забави,
+        <article class="work">
+          <h3>Рукавичка</h3>
+          <pre class="poem">Ждучи на грища і забави,
 В звіринці своїм величаво
 Король Франціск сидів;
 Тіснились вельможі при троні
@@ -416,145 +393,116 @@
 Він рукавичку в лице їй кинув:
 "Подяки, дамо, не треба мені" —
 Сказав і її покинув.
-            </pre>
-                    </article>
-                </div>
-            </section>
+</pre>
+        </article>
+      </section>
 
-            <!-- Гра -->
-            <section id="game">
-                <h2>Легка гра — «Злови рукавичку»</h2>
-                <p class="muted">Клікай на рукавичку, яка з'являється в різних місцях і рухається. За кожен клік +1
-                    очко. Грай 20 секунд.</p>
+      <!-- Гра -->
+      <section id="game">
+        <h2>Легка гра — «Злови рукавичку»</h2>
+        <p class="muted">Клікай на рукавичку...</p>
 
-                <div id="game-board" class="game-board glow" aria-live="polite">
-                    <div id="glove" title="Клікни!">🧤</div>
-                </div>
+        <div id="game-board" class="game-board glow">
+          <div id="glove" title="Клікни!">🧤</div>
+        </div>
 
-                <div class="game-controls">
-                    <button id="startBtn" class="btn">Почати</button>
-                    <div style="font-weight:700;color:var(--muted);">Час: <span id="time">20</span>s — Очки: <span
-                            id="score">0</span></div>
-                </div>
+        <div class="game-controls">
+          <button id="startBtn" class="btn">Почати</button>
+          <div style="font-weight:700;color:var(--muted);">
+            Час: <span id="time">20</span>s — Очки: <span id="score">0</span>
+          </div>
+        </div>
 
-                <div id="result" class="result" role="status" aria-atomic="true"></div>
-            </section>
+        <div id="result" class="result"></div>
+      </section>
+    </main>
 
-        </main>
+    <footer>
+      <div class="muted">Автори: Артур, Девід, Міша.</div>
+    </footer>
+  </div>
 
-        <footer>
-            <div class="muted">Артур, Девід, Міша.</div>
-        </footer>
-    </div>
+  <script>
+    // Навігація
+    (function () {
+      const buttons = document.querySelectorAll('nav button');
+      const sections = document.querySelectorAll('main section');
+      function show(targetId) {
+        sections.forEach(s => s.id === targetId ? s.classList.add('active') : s.classList.remove('active'));
+        buttons.forEach(b => b.dataset.target === targetId ? b.classList.add('active') : b.classList.remove('active'));
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+      buttons.forEach(b => b.addEventListener('click', () => show(b.dataset.target)));
+      document.querySelectorAll('[data-target]').forEach(el => {
+        el.addEventListener('click', () => {
+          const tgt = el.getAttribute('data-target');
+          if (tgt) show(tgt);
+        });
+      });
+    })();
 
-    <script>
-        // Навігація між секціями (робимо видиму одну секцію в одному вікні)
-        (function () {
-            const buttons = document.querySelectorAll('nav button');
-            const sections = document.querySelectorAll('main section');
-            function show(targetId) {
-                sections.forEach(s => s.id === targetId ? s.classList.add('active') : s.classList.remove('active'));
-                buttons.forEach(b => b.dataset.target === targetId ? b.classList.add('active') : b.classList.remove('active'));
-                // прокрутити догори (для мобільних)
-                window.scrollTo({ top: 0, behavior: 'smooth' });
-            }
-            buttons.forEach(b => b.addEventListener('click', () => show(b.dataset.target)));
-            // також кнопки в контенті з data-target
-            document.querySelectorAll('[data-target]').forEach(el => {
-                // пропускаємо навігаційні кнопки — додаткові лише покажуть секцію
-                if (el.tagName.toLowerCase() !== 'button' || el.parentElement.tagName.toLowerCase() === 'nav') {
-                    el.addEventListener('click', () => {
-                        const tgt = el.getAttribute('data-target');
-                        if (tgt) show(tgt);
-                    });
-                }
-            });
-        })();
+    // Гра
+    (function () {
+      const glove = document.getElementById('glove');
+      const board = document.getElementById('game-board');
+      const startBtn = document.getElementById('startBtn');
+      const timeEl = document.getElementById('time');
+      const scoreEl = document.getElementById('score');
+      const resultEl = document.getElementById('result');
 
-        // Гра: Злови рукавичку
-        (function () {
-            const glove = document.getElementById('glove');
-            const board = document.getElementById('game-board');
-            const startBtn = document.getElementById('startBtn');
-            const timeEl = document.getElementById('time');
-            const scoreEl = document.getElementById('score');
-            const resultEl = document.getElementById('result');
+      let score = 0;
+      let timeLeft = 20;
+      let timer = null;
+      let moveInterval = null;
 
-            let score = 0;
-            let timeLeft = 40;
-            let timer = null;
-            let moveInterval = null;
+      function placeGlove() {
+        const pad = 10;
+        const gRect = glove.getBoundingClientRect();
+        const gloveW = gRect.width || 48;
+        const gloveH = gRect.height || 48;
+        const maxX = Math.max(0, board.clientWidth - gloveW - pad);
+        const maxY = Math.max(0, board.clientHeight - gloveH - pad);
+        glove.style.left = Math.random() * maxX + 'px';
+        glove.style.top = Math.random() * maxY + 'px';
+      }
 
-            // Ставимо рукавичку в випадкове місце, гарантуємо що вона повністю в межах
-            function placeGlove() {
-                const pad = 10; // відступ всередині
-                const gRect = glove.getBoundingClientRect();
-                const bRect = board.getBoundingClientRect();
-                const gloveW = gRect.width || 48;
-                const gloveH = gRect.height || 48;
-                const maxX = Math.max(0, board.clientWidth - gloveW - pad);
-                const maxY = Math.max(0, board.clientHeight - gloveH - pad);
-                const x = Math.floor(Math.random() * (maxX + 1)) + pad / 2;
-                const y = Math.floor(Math.random() * (maxY + 1)) + pad / 2;
-                glove.style.left = x + 'px';
-                glove.style.top = y + 'px';
-            }
+      glove.addEventListener('click', () => {
+        if (timeLeft <= 0) return;
+        score++;
+        scoreEl.textContent = score;
+        glove.classList.remove('pop');
+        void glove.offsetWidth;
+        glove.classList.add('pop');
+        placeGlove();
+      });
 
-            glove.addEventListener('click', (e) => {
-                if (timeLeft <= 0) return;
-                score += 1;
-                scoreEl.textContent = score;
-                // просто для фану — міні-анімація
-                glove.classList.remove('pop');
-                void glove.offsetWidth;
-                glove.classList.add('pop');
-                placeGlove();
-            });
+      startBtn.addEventListener('click', () => {
+        score = 0;
+        timeLeft = 20;
+        scoreEl.textContent = score;
+        timeEl.textContent = timeLeft;
+        resultEl.textContent = '';
+        placeGlove();
+        clearInterval(timer);
+        clearInterval(moveInterval);
 
-            // Додатково: дозволити торкання екрану
-            glove.addEventListener('touchstart', (e) => {
-                e.preventDefault();
-                glove.click();
-            }, { passive: false });
+        timer = setInterval(() => {
+          timeLeft--;
+          timeEl.textContent = timeLeft;
+          if (timeLeft <= 0) {
+            clearInterval(timer);
+            clearInterval(moveInterval);
+            resultEl.textContent = 'Гра закінчена! Ваш рахунок: ' + score;
+            glove.style.left = '-200px';
+          }
+        }, 1000);
 
-            startBtn.addEventListener('click', () => {
-                // скидання
-                score = 0;
-                timeLeft = 40;
-                scoreEl.textContent = '0';
-                timeEl.textContent = timeLeft;
-                resultEl.textContent = '';
-                placeGlove();
-                clearInterval(timer);
-                clearInterval(moveInterval);
-                // таймер
-                timer = setInterval(() => {
-                    timeLeft -= 1;
-                    timeEl.textContent = timeLeft;
-                    if (timeLeft <= 0) {
-                        clearInterval(timer);
-                        clearInterval(moveInterval);
-                        glove.style.left = '-200px';
-                        resultEl.textContent = 'Гра закінчена! Ваш рахунок: ' + score;
-                    }
-                }, 1000);
-                // рухаємо рукавичку раз на 1500ms
-                moveInterval = setInterval(placeGlove, 1500);
-            });
+        moveInterval = setInterval(placeGlove, 1500);
+      });
 
-            // Щоб при зміні розміру все було ок
-            window.addEventListener('resize', () => {
-                // якщо гра активна, пересунути рукавичку
-                if (timeLeft > 0 && timer) placeGlove();
-            });
-
-            // Поставити початкову позицію при завантаженні
-            window.addEventListener('load', () => {
-                // трохи затримати, щоб елементи відмалювались
-                setTimeout(placeGlove, 150);
-            });
-        })();
-    </script>
+      window.addEventListener('load', () => setTimeout(placeGlove, 150));
+    })();
+  </script>
 </body>
 
 </html>
